@@ -11,7 +11,14 @@ import (
 	"sshv/internal/vault"
 )
 
+var version = "dev"
+
 func main() {
+	if len(os.Args) > 1 && (os.Args[1] == "--version" || os.Args[1] == "-v") {
+		fmt.Printf("sshv %s\n", version)
+		return
+	}
+
 	cfg, err := config.NewDefaultStore()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "sshv: %v\n", err)
