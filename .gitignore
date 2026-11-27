@@ -1,0 +1,13 @@
+# Binaries
+/sshv
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test / coverage
+*.test
+*.out
+
+# macOS
+.DS_Store
