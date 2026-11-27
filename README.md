@@ -2,7 +2,15 @@
 
 Lightweight Go TUI SSH vault for macOS. Reads/writes `~/.ssh/config` directly and stores optional passwords in macOS Keychain for automatic PTY login.
 
-## Install / Build
+## Install
+
+### Homebrew (macOS)
+
+```bash
+brew install rfahmi/tap/sshv
+```
+
+### Build from source
 
 ```bash
 go build -o /opt/homebrew/bin/sshv ./cmd/sshv
